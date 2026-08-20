@@ -1,0 +1,45 @@
+{
+  "id": "gemini",
+  "name": "Gemini",
+  "baseUrl": "https://generativelanguage.googleapis.com",
+  "timeoutMs": 120000,
+  "authType": "api-key-header",
+  "credentialId": "gemini-v1beta",
+  "keyConfig": {
+    "headerName": "x-goog-api-key",
+    "prefix": ""
+  },
+  "actions": [
+    {
+      "id": "generateContent",
+      "name": "Generate content",
+      "url": "/v1beta/models/gemini-3.5-flash-lite:generateContent",
+      "method": "POST",
+      "description": "入力文章から応答を生成する",
+      "request": {
+        "contents": [
+          {
+            "parts": [
+              {
+                "text": "{{value}}"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "candidates": [
+          {
+            "content": {
+              "parts": [
+                {
+                  "text": "{{value}}"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

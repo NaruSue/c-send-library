@@ -1,0 +1,88 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "Symbols",
+    "items":  [
+                  {
+                      "name":  "Double Quotes",
+                      "value":  "\"\"",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Single Quotes",
+                      "value":  "\u0027",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Brackets",
+                      "value":  "[]",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Braces",
+                      "value":  "{}",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Parentheses",
+                      "value":  "()",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Arrow",
+                      "value":  "=\u003e",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "At Sign",
+                      "value":  "@",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Separator",
+                      "value":  "---",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

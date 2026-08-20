@@ -1,0 +1,88 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "Windowsコマンド",
+    "items":  [
+                  {
+                      "name":  "現在のフォルダを表示",
+                      "value":  "cd",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "ファイル一覧を表示",
+                      "value":  "dir",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "テキストを出力",
+                      "value":  "echo Hello",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "フォルダを作成",
+                      "value":  "mkdir sample",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "ファイルを削除",
+                      "value":  "del sample.txt",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "フォルダを削除",
+                      "value":  "rmdir /s /q sample",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "IP設定を確認",
+                      "value":  "ipconfig",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "実行中タスクを表示",
+                      "value":  "tasklist",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>c-send ライブラリ</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { max-width: 960px; margin: 0 auto; padding: 24px; }
+    header { margin-bottom: 24px; }
+    input { width: 100%; box-sizing: border-box; padding: 10px; margin: 12px 0; }
+    section { margin: 24px 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+    article { border: 1px solid #8886; border-radius: 10px; padding: 16px; }
+    article h3 { margin-top: 0; }
+    .meta { opacity: .75; font-size: .9em; }
+    a { display: inline-block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>c-send ライブラリ</h1>
+    <p>API設定、AIプロンプト、定型文、テンプレートをダウンロードできます。</p>
+    <input id="search" type="search" placeholder="ライブラリを検索" aria-label="ライブラリを検索" />
+  </header>
+  <main id="content"><p>読み込み中...</p></main>
+  <script>
+    const search = document.getElementById("search");
+    let catalog = { apis: [], datasets: [] };
+    function card(item) {
+      const article = document.createElement("article");
+      article.innerHTML = `<h3></h3><p class="meta"></p><p></p>`;
+      article.querySelector("h3").textContent = item.name;
+      article.querySelector(".meta").textContent = [item.language, item.datasetType || item.authType].filter(Boolean).join(" / ");
+      article.querySelector("p:not(.meta)").textContent = item.description || "";
+      const link = document.createElement("a");
+      link.href = item.downloadUrl;
+      link.download = "";
+      link.textContent = "JSONをダウンロード";
+      article.appendChild(link);
+      return article;
+    }
+    function render() {
+      const query = search.value.trim().toLocaleLowerCase();
+      const matches = (item) => JSON.stringify(item).toLocaleLowerCase().includes(query);
+      const content = document.getElementById("content");
+      content.innerHTML = "";
+      [["API設定", catalog.apis], ["データセット", catalog.datasets]].forEach(([title, items]) => {
+        const list = items.filter(matches);
+        if (!list.length) return;
+        const section = document.createElement("section");
+        section.innerHTML = `<h2>${title}</h2><div class="grid"></div>`;
+        const grid = section.querySelector(".grid");
+        list.forEach((item) => grid.appendChild(card(item)));
+        content.appendChild(section);
+      });
+      if (!content.children.length) content.innerHTML = "<p>該当するライブラリがありません。</p>";
+    }
+    search.addEventListener("input", render);
+    fetch("./catalog.json", { cache: "no-store" })
+      .then((response) => { if (!response.ok) throw new Error(response.status); return response.json(); })
+      .then((data) => { catalog = data; render(); })
+      .catch((error) => { document.getElementById("content").textContent = `カタログを読み込めません: ${error.message}`; });
+  </script>
+</body>
+</html>

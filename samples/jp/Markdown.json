@@ -1,0 +1,78 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "Markdown",
+    "items":  [
+                  {
+                      "name":  "見出し1",
+                      "value":  "# 見出し1",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "見出し2",
+                      "value":  "## 見出し2",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "箇条書き",
+                      "value":  "- 項目1",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "番号付きリスト",
+                      "value":  "1. 項目1",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "引用",
+                      "value":  "\u003e 引用文",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "コード",
+                      "value":  "```powershell",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "リンク",
+                      "value":  "[OpenAI](https://openai.com)",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

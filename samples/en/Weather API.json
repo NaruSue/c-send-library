@@ -1,0 +1,28 @@
+{
+  "format": "c-send-pwa-backup",
+  "version": 1,
+  "createdAt": "2026-07-28T00:00:00.000Z",
+  "categoryName": "Weather API",
+  "items": [
+    {
+      "name": "Tokyo current temperature",
+      "value": "Get Tokyo's current temperature.",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "open-meteo",
+        "action": "tokyo-current-temperature"
+      }
+    },
+    {
+      "name": "Tokyo today's high",
+      "value": "Get Tokyo's forecast high temperature for today.",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "open-meteo",
+        "action": "tokyo-today-max-temperature"
+      }
+    }
+  ]
+}

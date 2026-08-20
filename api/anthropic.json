@@ -1,0 +1,39 @@
+{
+  "id": "anthropic",
+  "name": "Anthropic Claude API",
+  "baseUrl": "https://api.anthropic.com",
+  "timeoutMs": 120000,
+  "authType": "api-key-header",
+  "credentialId": "anthropic-messages",
+  "keyConfig": {
+    "headerName": "x-api-key",
+    "prefix": "",
+    "staticHeader.anthropic-version": "2023-06-01"
+  },
+  "actions": [
+    {
+      "id": "messages-create",
+      "name": "Message を生成",
+      "url": "/v1/messages",
+      "method": "POST",
+      "description": "本文をAnthropic Messages APIへ送り、最初のテキスト結果を取得する。モデル名はrequest内で変更できる。",
+      "request": {
+        "model": "claude-sonnet-4-6",
+        "max_tokens": 1024,
+        "messages": [
+          {
+            "role": "user",
+            "content": "{{value}}"
+          }
+        ]
+      },
+      "response": {
+        "content": [
+          {
+            "text": "{{value}}"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "format": "c-send-pwa-backup",
+  "version": 1,
+  "createdAt": "2026-07-31T00:00:00.000Z",
+  "categoryName": "Gemini API",
+  "items": [
+    {
+      "name": "クリップボードを要約",
+      "value": "次の文章を日本語で簡潔に要約してください。できれば箇条書きで記載してください。\n\n{{clipboard}}",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "gemini",
+        "action": "generateContent"
+      }
+    },
+    {
+      "name": "リストをソートする",
+      "value": "次のリストを各行1項目として昇順に並べ替えてください。入力の改行と各項目の文字列を維持し、説明やMarkdownコードブロックは付けず、並べ替えたリストだけ返してください。\n\n{{clipboard}}",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "gemini",
+        "action": "generateContent"
+      }
+    },
+    {
+      "name": "リストを逆順にソートする",
+      "value": "次のリストを各行1項目として降順に並べ替えてください。入力の改行と各項目の文字列を維持し、説明やMarkdownコードブロックは付けず、並べ替えたリストだけ返してください。\n\n{{clipboard}}",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "gemini",
+        "action": "generateContent"
+      }
+    },
+    {
+      "name": "リストを重複除外",
+      "value": "次のリストから重複を除外して返して。\n\n{{clipboard}}",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "gemini",
+        "action": "generateContent"
+      }
+    },
+    {
+      "name": "半角へ変換",
+      "value": "次の文章に含まれる全角の英数字と記号だけを半角に変換してください。日本語、改行、空白、項目の順序など、変換対象外の文字は変更しないでください。説明やMarkdownコードブロックは付けず、変換後の文章だけ返してください。\n\n{{clipboard}}",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "gemini",
+        "action": "generateContent"
+      }
+    },
+    {
+      "name": "全角へ変換",
+      "value": "次の文章に含まれる半角の英数字と記号だけを全角に変換してください。日本語、改行、空白、項目の順序など、変換対象外の文字は変更しないでください。説明やMarkdownコードブロックは付けず、変換後の文章だけ返してください。\n\n{{clipboard}}",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "gemini",
+        "action": "generateContent"
+      }
+    },
+    {
+      "name": "文章を添削",
+      "value": "あなたは文芸の専門家です。次の文章を厳しく添削してください。改善案も示してください。ただし、細かい添削ではなくてスムーズに置き換えができるような書き方にしてください。利用者は結果をクリップボードから貼り付けて使うので長文で指摘されてもありがたくないです。\n\n{{clipboard}}",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "gemini",
+        "action": "generateContent"
+      }
+    }
+  ]
+}

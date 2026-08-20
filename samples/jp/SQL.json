@@ -1,0 +1,88 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "SQL",
+    "items":  [
+                  {
+                      "name":  "全件取得",
+                      "value":  "SELECT * FROM users;",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "件数を数える",
+                      "value":  "SELECT COUNT(*) FROM users;",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "最新10件を取得",
+                      "value":  "SELECT * FROM users ORDER BY created_at DESC LIMIT 10;",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "条件で検索",
+                      "value":  "SELECT * FROM users WHERE status = \u0027active\u0027;",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "更新日時で並べ替え",
+                      "value":  "SELECT id, name FROM users ORDER BY updated_at DESC;",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "データを追加",
+                      "value":  "INSERT INTO users (name, email) VALUES (\u0027Taro\u0027, \u0027taro@example.com\u0027);",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "データを更新",
+                      "value":  "UPDATE users SET status = \u0027active\u0027 WHERE id = 1;",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "データを削除",
+                      "value":  "DELETE FROM users WHERE id = 1;",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

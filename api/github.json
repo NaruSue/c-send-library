@@ -1,0 +1,38 @@
+{
+  "id": "github",
+  "name": "GitHub REST API",
+  "baseUrl": "https://api.github.com",
+  "timeoutMs": 120000,
+  "authType": "bearer",
+  "credentialId": "github-rest",
+  "keyConfig": {
+    "headerName": "Authorization",
+    "prefix": "Bearer ",
+    "staticHeader.Accept": "application/vnd.github+json",
+    "staticHeader.X-GitHub-Api-Version": "2022-11-28"
+  },
+  "actions": [
+    {
+      "id": "c-send-default-branch",
+      "name": "c-send の既定ブランチ名を取得",
+      "url": "/repos/NaruSue/c-send",
+      "method": "GET",
+      "description": "c-send公開リポジトリのdefault_branchを取得する。Request JSONを省略したボディなしGETのサンプル。",
+      "response": {
+        "default_branch": "{{value}}"
+      }
+    },
+    {
+      "id": "c-send-branch-list",
+      "name": "c-send のブランチ一覧を取得",
+      "url": "/repos/NaruSue/c-send/branches",
+      "method": "GET",
+      "description": "c-send公開リポジトリのブランチ名を取得する。GitHub APIは「最新ブランチ」の一意な順序を定義しないため、一覧を返す。",
+      "response": [
+        {
+          "name": "{{value}}"
+        }
+      ]
+    }
+  ]
+}

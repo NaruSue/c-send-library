@@ -1,0 +1,88 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "SQL",
+    "items":  [
+                  {
+                      "name":  "Select All",
+                      "value":  "SELECT * FROM users;",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Count Rows",
+                      "value":  "SELECT COUNT(*) FROM users;",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Latest 10 Rows",
+                      "value":  "SELECT * FROM users ORDER BY created_at DESC LIMIT 10;",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Search by Status",
+                      "value":  "SELECT * FROM users WHERE status = \u0027active\u0027;",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Sort by Update Time",
+                      "value":  "SELECT id, name FROM users ORDER BY updated_at DESC;",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Insert Row",
+                      "value":  "INSERT INTO users (name, email) VALUES (\u0027Taro\u0027, \u0027taro@example.com\u0027);",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Update Row",
+                      "value":  "UPDATE users SET status = \u0027active\u0027 WHERE id = 1;",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Delete Row",
+                      "value":  "DELETE FROM users WHERE id = 1;",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

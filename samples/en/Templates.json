@@ -1,0 +1,118 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "Template Samples",
+    "items":  [
+                  {
+                      "name":  "Date - default format",
+                      "value":  "Current time: {{date()}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  },
+                  {
+                      "name":  "Date - custom format",
+                      "value":  "Created: {{date(\"yyyy/MM/dd\",current)}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  },
+                  {
+                      "name":  "Date - with offset",
+                      "value":  "Due: {{date(\"yyyy/MM/dd HH:mm\",current,\"+1d\")}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  },
+                  {
+                      "name":  "Insert clipboard",
+                      "value":  "Reply to {{clipboard}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  },
+                  {
+                      "name":  "Sort lines ascending",
+                      "value":  "{{sort}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  },
+                  {
+                      "name":  "Sort lines descending",
+                      "value":  "{{sort_desc}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  },
+                  {
+                      "name":  "Calculate",
+                      "value":  "{{calc}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  },
+                  {
+                      "name":  "Pretty-print JSON",
+                      "value":  "{{json}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  },
+                  {
+                      "name":  "URI encode",
+                      "value":  "{{uri_encode}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  },
+                  {
+                      "name":  "URI decode",
+                      "value":  "{{uri_decode}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "template",
+                                   "en"
+                               ]
+                  }
+              ]
+}

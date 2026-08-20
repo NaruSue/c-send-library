@@ -1,0 +1,32 @@
+{
+  "id": "openai-chatgpt-oauth",
+  "name": "OpenAI ChatGPT OAuth（実験的）",
+  "baseUrl": "http://127.0.0.1:10531/v1",
+  "timeoutMs": 120000,
+  "authType": "none",
+  "keyConfig": {},
+  "actions": [
+    {
+      "id": "responses-create",
+      "name": "Responses（ChatGPT OAuth）",
+      "url": "/responses",
+      "method": "POST",
+      "description": "ローカルのopenai-oauthプロキシを経由してChatGPTアカウントを利用します。docs/api/other/openai-chatgpt-oauth.md を参照",
+      "request": {
+        "model": "gpt-5.6-luna",
+        "input": "{{value}}"
+      },
+      "response": {
+        "output": [
+          {
+            "content": [
+              {
+                "text": "{{value}}"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

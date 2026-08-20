@@ -1,0 +1,88 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "URLs",
+    "items":  [
+                  {
+                      "name":  "GitHub",
+                      "value":  "https://github.com/",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "OpenAI",
+                      "value":  "https://openai.com/",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Google",
+                      "value":  "https://www.google.com/",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "YouTube",
+                      "value":  "https://www.youtube.com/",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Wikipedia",
+                      "value":  "https://en.wikipedia.org/",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Stack Overflow",
+                      "value":  "https://stackoverflow.com/",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Microsoft",
+                      "value":  "https://www.microsoft.com/",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "NPM",
+                      "value":  "https://www.npmjs.com/",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

@@ -1,0 +1,78 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "JSON",
+    "items":  [
+                  {
+                      "name":  "ユーザー情報",
+                      "value":  "{\"name\":\"Taro\",\"email\":\"taro@example.com\"}",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "設定",
+                      "value":  "{\"theme\":\"light\",\"language\":\"ja\"}",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "APIレスポンス",
+                      "value":  "{\"status\":\"ok\",\"message\":\"success\"}",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "配列",
+                      "value":  "[\"apple\",\"orange\",\"banana\"]",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "空オブジェクト",
+                      "value":  "{}",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "空配列",
+                      "value":  "[]",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "権限",
+                      "value":  "{\"read\":true,\"write\":false}",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

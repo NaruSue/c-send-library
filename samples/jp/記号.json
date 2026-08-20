@@ -1,0 +1,88 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "記号",
+    "items":  [
+                  {
+                      "name":  "ダブルクォート",
+                      "value":  "\"\"",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "シングルクォート",
+                      "value":  "\u0027",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "角括弧",
+                      "value":  "[]",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "波括弧",
+                      "value":  "{}",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "丸括弧",
+                      "value":  "()",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "矢印",
+                      "value":  "=\u003e",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "アットマーク",
+                      "value":  "@",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "区切り線",
+                      "value":  "---",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

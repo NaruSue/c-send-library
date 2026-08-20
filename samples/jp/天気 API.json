@@ -1,0 +1,28 @@
+{
+  "format": "c-send-pwa-backup",
+  "version": 1,
+  "createdAt": "2026-07-28T00:00:00.000Z",
+  "categoryName": "天気 API",
+  "items": [
+    {
+      "name": "東京の現在気温",
+      "value": "東京の現在気温を取得します。",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "open-meteo",
+        "action": "tokyo-current-temperature"
+      }
+    },
+    {
+      "name": "東京の今日の最高気温",
+      "value": "東京の今日の予報最高気温を取得します。",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "open-meteo",
+        "action": "tokyo-today-max-temperature"
+      }
+    }
+  ]
+}

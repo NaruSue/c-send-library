@@ -1,0 +1,36 @@
+{
+  "id": "openai",
+  "name": "OpenAI",
+  "baseUrl": "https://api.openai.com/v1",
+  "timeoutMs": 120000,
+  "authType": "bearer",
+  "credentialId": "openai-responses",
+  "keyConfig": {
+    "headerName": "Authorization",
+    "prefix": "Bearer "
+  },
+  "actions": [
+    {
+      "id": "responses-create",
+      "name": "Responses を生成",
+      "url": "/responses",
+      "method": "POST",
+      "description": "本文をOpenAI Responses APIへ送り、最初のテキスト結果を取得する。モデル名はrequest内で変更できる。",
+      "request": {
+        "model": "gpt-5-mini",
+        "input": "{{value}}"
+      },
+      "response": {
+        "output": [
+          {
+            "content": [
+              {
+                "text": "{{value}}"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

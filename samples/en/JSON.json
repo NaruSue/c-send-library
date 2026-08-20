@@ -1,0 +1,78 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "JSON",
+    "items":  [
+                  {
+                      "name":  "User Info",
+                      "value":  "{\"name\":\"Taro\",\"email\":\"taro@example.com\"}",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Settings",
+                      "value":  "{\"theme\":\"light\",\"language\":\"en\"}",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "API Response",
+                      "value":  "{\"status\":\"ok\",\"message\":\"success\"}",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Array",
+                      "value":  "[\"apple\",\"orange\",\"banana\"]",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Empty Object",
+                      "value":  "{}",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Empty Array",
+                      "value":  "[]",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Permissions",
+                      "value":  "{\"read\":true,\"write\":false}",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

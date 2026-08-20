@@ -1,0 +1,88 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "Greetings",
+    "items":  [
+                  {
+                      "name":  "Good Morning",
+                      "value":  "Good morning",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Hello",
+                      "value":  "Hello",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Good Evening",
+                      "value":  "Good evening",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Thanks",
+                      "value":  "Thank you",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Please",
+                      "value":  "Please",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "Understood",
+                      "value":  "Understood",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "I will check",
+                      "value":  "I will check",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "See you later",
+                      "value":  "See you later",
+                      "tags":  [
+                                   "PWA",
+                                   "en"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

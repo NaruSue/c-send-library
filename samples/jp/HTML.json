@@ -1,0 +1,78 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "HTML",
+    "items":  [
+                  {
+                      "name":  "基本HTML",
+                      "value":  "\u003c!doctype html\u003e\u003chtml lang=\"ja\"\u003e\u003chead\u003e\u003cmeta charset=\"utf-8\"\u003e\u003ctitle\u003eTitle\u003c/title\u003e\u003c/head\u003e\u003cbody\u003e\u003c/body\u003e\u003c/html\u003e",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "リンク",
+                      "value":  "\u003ca href=\"https://example.com\"\u003eExample\u003c/a\u003e",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "画像",
+                      "value":  "\u003cimg src=\"image.png\" alt=\"image\"\u003e",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "入力欄",
+                      "value":  "\u003cinput type=\"text\" name=\"name\" placeholder=\"お名前\"\u003e",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "ボタン",
+                      "value":  "\u003cbutton type=\"button\"\u003e送信\u003c/button\u003e",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "リスト",
+                      "value":  "\u003cul\u003e\u003cli\u003e項目1\u003c/li\u003e\u003cli\u003e項目2\u003c/li\u003e\u003c/ul\u003e",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  },
+                  {
+                      "name":  "テーブル",
+                      "value":  "\u003ctable\u003e\u003ctr\u003e\u003cth\u003e項目\u003c/th\u003e\u003cth\u003e値\u003c/th\u003e\u003c/tr\u003e\u003c/table\u003e",
+                      "tags":  [
+                                   "PWA",
+                                   "ja"
+                               ],
+                      "type":  0,
+                      "mode":  "plain"
+                  }
+              ]
+}

@@ -1,0 +1,28 @@
+{
+  "format": "c-send-pwa-backup",
+  "version": 1,
+  "createdAt": "2026-07-28T00:00:00.000Z",
+  "categoryName": "Gemini API",
+  "items": [
+    {
+      "name": "Summarize clipboard",
+      "value": "Summarize the following text briefly.\n\n{{clipboard}}",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "gemini",
+        "action": "generateContent"
+      }
+    },
+    {
+      "name": "Proofread clipboard",
+      "value": "Proofread the following text and suggest improvements.\n\n{{clipboard}}",
+      "type": 0,
+      "mode": "api",
+      "options": {
+        "api": "gemini",
+        "action": "generateContent"
+      }
+    }
+  ]
+}

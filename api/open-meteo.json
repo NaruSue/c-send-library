@@ -1,0 +1,36 @@
+{
+  "id": "open-meteo",
+  "name": "Open-Meteo Weather API",
+  "baseUrl": "https://api.open-meteo.com",
+  "timeoutMs": 120000,
+  "authType": "none",
+  "keyConfig": {},
+  "actions": [
+    {
+      "id": "tokyo-current-temperature",
+      "name": "東京の現在気温を取得",
+      "url": "/v1/forecast?latitude=35.6895&longitude=139.6917&current=temperature_2m&timezone=Asia%2FTokyo",
+      "method": "GET",
+      "description": "東京の現在気温（摂氏）を取得する。API key不要のボディなしGETサンプル。",
+      "response": {
+        "current": {
+          "temperature_2m": "{{value}}"
+        }
+      }
+    },
+    {
+      "id": "tokyo-today-max-temperature",
+      "name": "東京の今日の最高気温を取得",
+      "url": "/v1/forecast?latitude=35.6895&longitude=139.6917&daily=temperature_2m_max&timezone=Asia%2FTokyo",
+      "method": "GET",
+      "description": "東京の今日の予報最高気温（摂氏）を取得する。",
+      "response": {
+        "daily": {
+          "temperature_2m_max": [
+            "{{value}}"
+          ]
+        }
+      }
+    }
+  ]
+}

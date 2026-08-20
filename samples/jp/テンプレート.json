@@ -1,0 +1,118 @@
+{
+    "format":  "c-send-pwa-backup",
+    "version":  1,
+    "createdAt":  "2026-07-27T00:00:00.000Z",
+    "categoryName":  "テンプレートサンプル",
+    "items":  [
+                  {
+                      "name":  "日時 - 既定形式",
+                      "value":  "現在日時：{{date()}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  },
+                  {
+                      "name":  "日時 - 書式指定",
+                      "value":  "作成日：{{date(\"yyyy/MM/dd\",current)}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  },
+                  {
+                      "name":  "日時 - 差分指定",
+                      "value":  "提出期限：{{date(\"yyyy/MM/dd HH:mm\",current,\"+1d\")}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  },
+                  {
+                      "name":  "クリップボード挿入",
+                      "value":  "{{clipboard}} さんへの返信",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  },
+                  {
+                      "name":  "行の昇順ソート",
+                      "value":  "{{sort}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  },
+                  {
+                      "name":  "行の降順ソート",
+                      "value":  "{{sort_desc}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  },
+                  {
+                      "name":  "計算",
+                      "value":  "計算結果：{{calc}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  },
+                  {
+                      "name":  "JSON整形",
+                      "value":  "整形済みJSON：\n{{json}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  },
+                  {
+                      "name":  "URIエンコード",
+                      "value":  "エンコード結果：{{uri_encode}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  },
+                  {
+                      "name":  "URIデコード",
+                      "value":  "デコード結果：{{uri_decode}}",
+                      "type":  0,
+                      "mode":  "template",
+                      "tags":  [
+                                   "PWA",
+                                   "テンプレ",
+                                   "ja"
+                               ]
+                  }
+              ]
+}

@@ -1,0 +1,56 @@
+{
+  "format": "c-send-pwa-backup",
+  "version": 1,
+  "createdAt": "2026-07-31T00:00:00.000Z",
+  "categoryName": "AI APIプロンプト",
+  "items": [
+    {
+      "name": "AI：文章を要約する",
+      "value": "次の文章を日本語で5項目以内に要約してください。重要な事実と結論を優先してください。\n\n{{clipboard}}",
+      "tags": ["PWA", "AIプロンプト", "要約", "文章"],
+      "type": 0,
+      "mode": "api",
+      "options": {"api": "gemini", "action": "generateContent"}
+    },
+    {
+      "name": "AI：文章を丁寧にする",
+      "value": "次の文章の意味を変えずに、相手に配慮した丁寧な日本語へ書き換えてください。書き換え後の文章だけを返してください。\n\n{{clipboard}}",
+      "tags": ["PWA", "AIプロンプト", "文章", "丁寧"],
+      "type": 0,
+      "mode": "api",
+      "options": {"api": "gemini", "action": "generateContent"}
+    },
+    {
+      "name": "AI：メールを作成する",
+      "value": "次の情報から、件名と本文を含む簡潔なビジネスメールを作成してください。情報にない事実は補わないでください。\n\n{{clipboard}}",
+      "tags": ["PWA", "AIプロンプト", "メール", "仕事"],
+      "type": 0,
+      "mode": "api",
+      "options": {"api": "gemini", "action": "generateContent"}
+    },
+    {
+      "name": "AI：会議メモを整理する",
+      "value": "次の会議メモを、決定事項、未決事項、担当者、期限、次のアクションに分類して整理してください。\n\n{{clipboard}}",
+      "tags": ["PWA", "AIプロンプト", "会議", "タスク"],
+      "type": 0,
+      "mode": "api",
+      "options": {"api": "gemini", "action": "generateContent"}
+    },
+    {
+      "name": "AI：文章を校正する",
+      "value": "次の文章の誤字脱字と不自然な表現を修正してください。修正後の文章だけを返してください。\n\n{{clipboard}}",
+      "tags": ["PWA", "AIプロンプト", "校正", "文章"],
+      "type": 0,
+      "mode": "api",
+      "options": {"api": "gemini", "action": "generateContent"}
+    },
+    {
+      "name": "AI：JSONを整形・説明する",
+      "value": "次のJSONを読みやすく整形し、主要な項目と用途を日本語で説明してください。\n\n{{clipboard}}",
+      "tags": ["PWA", "AIプロンプト", "JSON", "開発"],
+      "type": 0,
+      "mode": "api",
+      "options": {"api": "gemini", "action": "generateContent"}
+    }
+  ]
+}
