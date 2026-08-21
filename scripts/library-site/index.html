@@ -15,6 +15,9 @@
     article h3 { margin-top: 0; }
     .meta { opacity: .75; font-size: .9em; }
     a { display: inline-block; margin-top: 10px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 20px; }
+    .tags button { border: 0; border-radius: 999px; padding: 7px 12px; cursor: pointer; }
+    .tags button.active { background: #2563eb; color: white; }
   </style>
 </head>
 <body>
@@ -22,11 +25,31 @@
     <h1>c-send ライブラリ</h1>
     <p>API設定、AIプロンプト、定型文、テンプレートをダウンロードできます。</p>
     <input id="search" type="search" placeholder="ライブラリを検索" aria-label="ライブラリを検索" />
+    <div id="tags" class="tags" aria-label="タグで絞り込み"></div>
   </header>
   <main id="content"><p>読み込み中...</p></main>
   <script>
     const search = document.getElementById("search");
+    const tags = document.getElementById("tags");
     let catalog = { apis: [], datasets: [] };
+    let activeTag = "";
+    function renderTags() {
+      const counts = new Map();
+      [...catalog.apis, ...catalog.datasets].forEach((item) => (item.tags || []).forEach((tag) => counts.set(tag, (counts.get(tag) || 0) + 1)));
+      tags.innerHTML = "";
+      const all = document.createElement("button");
+      all.textContent = "すべて";
+      all.className = activeTag ? "" : "active";
+      all.onclick = () => { activeTag = ""; renderTags(); render(); };
+      tags.appendChild(all);
+      [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ja")).forEach(([tag, count]) => {
+        const button = document.createElement("button");
+        button.textContent = `${tag} ${count}`;
+        button.className = activeTag === tag ? "active" : "";
+        button.onclick = () => { activeTag = activeTag === tag ? "" : tag; renderTags(); render(); };
+        tags.appendChild(button);
+      });
+    }
     function card(item) {
       const article = document.createElement("article");
       article.innerHTML = `<h3></h3><p class="meta"></p><p></p>`;
@@ -42,7 +65,7 @@
     }
     function render() {
       const query = search.value.trim().toLocaleLowerCase();
-      const matches = (item) => JSON.stringify(item).toLocaleLowerCase().includes(query);
+      const matches = (item) => (!activeTag || (item.tags || []).includes(activeTag)) && JSON.stringify(item).toLocaleLowerCase().includes(query);
       const content = document.getElementById("content");
       content.innerHTML = "";
       [["API設定", catalog.apis], ["データセット", catalog.datasets]].forEach(([title, items]) => {
@@ -59,7 +82,7 @@
     search.addEventListener("input", render);
     fetch("./catalog.json", { cache: "no-store" })
       .then((response) => { if (!response.ok) throw new Error(response.status); return response.json(); })
-      .then((data) => { catalog = data; render(); })
+      .then((data) => { catalog = data; renderTags(); render(); })
       .catch((error) => { document.getElementById("content").textContent = `カタログを読み込めません: ${error.message}`; });
   </script>
 </body>

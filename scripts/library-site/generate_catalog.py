@@ -14,6 +14,7 @@ def read_json(path: Path):
 
 def dataset_entry(path: Path, payload: dict, language: str, directory_name: str) -> dict:
     items = payload.get("items", [])
+    tags = sorted({str(tag).strip() for item in items for tag in item.get("tags", []) if str(tag).strip()})
     api_ids = sorted({item.get("options", {}).get("api") for item in items if item.get("options", {}).get("api")})
     has_clipboard = any("{{clipboard}}" in str(item.get("value", "")) for item in items)
     has_api = any(item.get("mode") == "api" for item in items)
@@ -25,6 +26,7 @@ def dataset_entry(path: Path, payload: dict, language: str, directory_name: str)
         "inputMode": "clipboard" if has_clipboard else "fixed",
         "itemCount": len(items),
         "requiredApis": api_ids,
+        "tags": tags,
         "downloadUrl": f"./datasets/{directory_name}/{quote(path.name)}",
     }
 
@@ -39,12 +41,14 @@ def main() -> None:
     apis = []
     for path in sorted((root / "api").glob("*.json")):
         payload = read_json(path)
+        tags = sorted({str(tag).strip() for tag in payload.get("tags", []) if str(tag).strip()})
         apis.append({
             "id": payload["id"],
             "name": payload.get("name", payload["id"]),
             "authType": payload.get("authType"),
             "actionCount": len(payload.get("actions", [])),
             "downloadUrl": f"./api/{quote(path.name)}",
+            "tags": tags,
         })
     datasets = []
     for language, directory_name in (("ja", "jp"), ("en", "en")):
